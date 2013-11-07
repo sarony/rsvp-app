@@ -1,7 +1,13 @@
-RsvpApp::Application.routes.draw do
-  resources :invites
+RsvpApp::Application.routes.draw do 
+  resources :events do
+    resources :invites
+  end
 
-  resources :events
+  # resources :ponds
+  # resources :frogs do #=> /frogs/:id
+  #   resources :tadpoles #=> /tadpoles/new
+  # end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
