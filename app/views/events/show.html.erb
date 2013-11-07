@@ -18,5 +18,6 @@
   <%= @invites.to_sentence %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Edit Event', edit_event_path(@event) %> |
+<%= link_to 'Send More Invites', new_event_invite_path(@event) %> |
 <%= link_to 'Back', events_path %>
