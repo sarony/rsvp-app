@@ -29,12 +29,12 @@ namespace :db do
     f1 = Invite.create(
       :name => 'Sammy',
       :rsvp => 'yes',
-      :event_id => Event.find_by(:name => 'Birthday').id)
+      :event_id => Event.find_by(:name => 'Birthday Party').id)
 
     f2 = Invite.create(
       :name => 'Aaron',
       :rsvp => 'no',
-      :event_id => Event.find_by(:name => 'Birthday').id)
+      :event_id => Event.find_by(:name => 'Birthday Party').id)
 
     f3 = Invite.create(
       :name => 'Betty',
@@ -49,7 +49,17 @@ namespace :db do
     f4 = Invite.create(
       :name => 'Dilbert',
       :rsvp => 'yes',
-      :event_id => Event.find_by(:name => 'Graducation').id)
+      :event_id => Event.find_by(:name => 'Graduation').id)
+
+    f4 = Invite.create(
+      :name => 'Debby',
+      :rsvp => 'no',
+      :event_id => Event.find_by(:name => 'Graduation').id)
+
+    f4 = Invite.create(
+      :name => 'Crystal',
+      :rsvp => 'yes',
+      :event_id => Event.find_by(:name => 'Dinner Party').id)
 
   end
 end

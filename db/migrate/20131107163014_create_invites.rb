@@ -1,9 +1,11 @@
-class CreateInviteTable < ActiveRecord::Migration
+class CreateInvites < ActiveRecord::Migration
   def change
-    create_table :invite_tables do |t|
+    create_table :invites do |t|
       t.string :name
       t.string :rsvp
       t.integer :event_id
+
+      t.timestamps
     end
   end
 end
