@@ -34,6 +34,10 @@ end
 
 gem 'pry'
 
+gem 'twitter-bootswatch-rails', '~> 3.0.1'
+gem 'twitter-bootswatch-rails-helpers'
+gem 'therubyracer'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

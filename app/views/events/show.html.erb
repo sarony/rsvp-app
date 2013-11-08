@@ -4,12 +4,12 @@
   <strong>Name:</strong>
   <%= @event.name %>
 </p>
-
+</br>
 <p>
   <strong>Date:</strong>
   <%= @event.date %>
 </p>
-
+</br>
 <p>
   <strong>Invites Sent To:</strong>
   <% @invites = @event.invites.collect do |invite| %>
@@ -17,7 +17,7 @@
   <% end %>
   <%= @invites.to_sentence %>
 </p>
-
+</br>
 <%= link_to 'Edit Event', edit_event_path(@event) %> |
 <%= link_to 'Send More Invites', new_event_invite_path(@event) %> |
 <%= link_to 'Back', events_path %>
