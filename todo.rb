@@ -1,3 +1,19 @@
+WHAT THE FUCK ARE YOU DOING TODAY?
+- decide how you want your app to look
+- organize youre fucking views
+- fix your UX
+- add ajax to the pages you want
+- add login page/user authentication
+- add sessions and cookies
+
+***
+DESIGN
+- change RSVP to be a boolean: true, false buttons (yes/no)
+- change "invites sent to" => "attendees" with "yes/no"
+
+
+****
+
 Create an event => # /events/new
 Invite new users to the event => # /events/1/invites/new
 User rsvps to the event => # /invites/1/edit
