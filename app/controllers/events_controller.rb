@@ -4,6 +4,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
+    @event = Event.new
     @events = Event.all
   end
 
@@ -27,7 +28,7 @@ class EventsController < ApplicationController
     @event = Event.new(event_params)
     respond_to do |format|
       if @event.save
-        format.html { redirect_to new_event_invite_path(@event), notice: 'Event was successfully created.' }
+        format.html { redirect_to events_path, notice: 'Event was successfully created.' }
         format.json { render action: 'show', status: :created, location: @event }
       else
         format.html { render action: 'new' }

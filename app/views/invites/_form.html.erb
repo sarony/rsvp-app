@@ -6,9 +6,19 @@
   </div>
   </br>
   <div class="field">
-    <%= f.label :rsvp %><br>
-    <%= f.text_field :rsvp %>
+    <%= radio_button_tag "rsvp", @invite.id, @invite.rsvp=="yes" %>
+    <%= f.label "Yes" %>
   </div>
+  <div class="field">
+    <%= radio_button_tag "rsvp", @invite.id, @invite.rsvp=="no" %>
+    <%= f.label "No" %>
+  </div>
+  <div class="field">
+    <%= radio_button_tag "rsvp", @invite.id, @invite.rsvp=="waiting" %>
+    <%= f.label "Waiting for response..." %>
+  </div>
+
+
   </br>
   <div class="actions">
     <%= f.submit %>

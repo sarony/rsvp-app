@@ -46,6 +46,8 @@ Controllers
 - Make a new event. When "create" redirect to the "invites/new" page.
 - for each invite person, Invite.create(:name => params[:name], :event_id => params[:event_id])
 
+- Use AJAX for new invite to be on the same page
+- Use AJAX for new event to be on the same page
 
 
 

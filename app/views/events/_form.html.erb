@@ -1,17 +1,14 @@
 <%= form_for(@event) do |f| %>
 
   <div class="field">
-    <strong><%= f.label :name %>:</strong><br>
+    <strong><%= f.label :name %>:</strong>
     <%= f.text_field :name %>
-  </div>
-  <br>
-  <div class="field">
-    <strong><%= f.label :date %>:</strong><br>
+
+    <strong><%= f.label :date %>:</strong>
     <%= f.text_field :date %>
-  </div>
-  <br>
-  <div class="actions">
+
     <%= f.submit %>
+
   </div>
 
 <% end %>
