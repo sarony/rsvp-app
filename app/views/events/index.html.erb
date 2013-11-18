@@ -19,7 +19,7 @@
         <td><%= event.invites.count %></td>
         <td><%= link_to 'Show', event_invites_path(event) %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', :method => :delete %></td>
+        <td><%= link_to 'Destroy', event, :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>
